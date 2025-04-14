@@ -9,21 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.classList.add("lightbox");
     document.body.appendChild(lightbox);
   
-    const img = document.createElement("img");
-    img.alt = "";
-    lightbox.appendChild(img);
+    const lightboxImg = document.createElement("img");
+    lightboxImg.alt = "";
+    lightbox.appendChild(lightboxImg);
   
     images.forEach(image => {
       image.addEventListener("click", () => {
-        img.src = image.src;
-        img.alt = image.alt;
+        lightboxImg.src = image.src;
+        lightboxImg.alt = image.alt;
         lightbox.classList.add("show");
       });
     });
   
     lightbox.addEventListener("click", () => {
       lightbox.classList.remove("show");
-      img.src = "";
-      img.alt = "";
+      lightboxImg.src = "";
     });
 });
