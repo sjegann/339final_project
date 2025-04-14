@@ -1,7 +1,7 @@
 /* Body */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Georgia', sans-serif;
   background-color: #1f1f1f;
   color: #f1f1f1;
 }
@@ -20,6 +20,12 @@ header h1 {
   color: #ffffff;
 }
 
+h2 {
+  text-align: center;
+  color: #2693cc;
+  margin-top: 2rem;
+}
+
 /* Navigation */
 nav ul {
   list-style: none;
@@ -34,7 +40,6 @@ nav a {
   color: #cccccc;
   text-decoration: none;
   padding-bottom: 0.2rem;
-  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 nav a.active,
@@ -72,12 +77,6 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
-  text-align: center;
-  color: #2693cc;
-  margin-top: 2rem;
-}
-
 #backTop {
   color: #2693cc;
   font-weight: bold;
@@ -88,6 +87,7 @@ h2 {
   color: #0072b0;
    text-decoration: underline;
 }
+
 /* Albums */
 .albums {
   display: grid;
@@ -101,26 +101,23 @@ h2 {
   background-color: #f2e5c7;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: visible;
-  z-index: 0;
   width: 250px;
-  height: 140px;
+  height: 150px;
   margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  color: #333;
+  text-decoration: none;
 }
 
 .album::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -10px;
-  left: 10px;
-  width: 50px;
+  left: 0px;
+  width: 100px;
   height: 18px;
   background-color: #e5d3a8;
   border-top-left-radius: 6px;
@@ -131,14 +128,12 @@ h2 {
 .album:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(79, 195, 247, 0.3);
-  z-index: 10;
 }
 
 .album h3 {
   margin: 0;
-  color: #7b4e00;
-  font-size: 1.1rem;
-  z-index: 1;
+  color: #1f1f1f;
+  font-size: 1.25rem;
 }
 
 /* Photo Preview */
@@ -165,8 +160,8 @@ h2 {
 .photo-preview img {
   width: 70px;
   height: 70px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   transition: transform 0.4s ease;
 }
 
@@ -181,16 +176,13 @@ h2 {
 }
 
 /* Grids for Images */
-.photo-grid-page {
-  padding: 2rem;
-}
-
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  padding: 1rem;
 }
 
 .photo-item {
@@ -209,13 +201,13 @@ h2 {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .photo-item p {
   margin: 0;
   color: #f1f1f1;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* About Page - Photo + Card Stack */
@@ -241,14 +233,13 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1;
   min-width: 250px;
   max-width: 600px;
 }
 
 .card-stack .info-card {
   background-color: #2a2a2a;
-  padding: 1.2rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   text-align: left;
@@ -259,7 +250,7 @@ h2 {
   color: #2693cc;
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* Buy Now Button */
@@ -269,10 +260,9 @@ h2 {
   padding: 6px 12px;
   background-color: #2693cc;
   color: white;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
 }
   
 .buyButton:hover {
