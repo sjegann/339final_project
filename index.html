@@ -7,42 +7,42 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Sharath's Photography</h1>
+  <header id="header">
+    <a href="#main-content" class="skip-main">Skip to Main Content</a>
+    <h1>SharathJeganPhotos</h1>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="gallery">
+  <main id= "main-content" class="gallery">
     <h2>Photo Albums</h2>
     <section class="albums">
       <a href="architecture.html" class="album" tabindex="0">
         <h3>Architecture</h3>
         <div class="photo-preview">
-          <img src="images/a1.jpg" alt="Travel 1">
-          <img src="images/a2.jpg" alt="Travel 2">
-          <img src="images/a3.jpg" alt="Travel 3">
+          <img src="images/architecture1.jpg" alt="White House">
+          <img src="images/architecture2.jpg" alt="White House at Night">
+          <img src="images/architecture3.jpg" alt="Vik Church">
         </div>
       </a>
       <a href="city.html" class="album" tabindex="0">
         <h3>City</h3>
         <div class="photo-preview">
-          <img src="images/c1.jpg" alt="Portrait 1">
-          <img src="images/c2.jpg" alt="Portrait 2">
-          <img src="images/c3.jpg" alt="Portrait 3">
+          <img src="images/city1.jpg" alt="Boston Skyline">
+          <img src="images/city2.jpg" alt="Porto by the River">
+          <img src="images/city3.jpg" alt="Porto Drone Shot">
         </div>
       </a>
       <a href="nature.html" class="album" tabindex="0">
         <h3>Nature</h3>
         <div class="photo-preview">
-          <img src="images/n1.jpg" alt="Portrait 1">
-          <img src="images/n2.jpg" alt="Portrait 2">
-          <img src="images/n3.jpg" alt="Portrait 3">
+          <img src="images/nature1.jpg" alt="Icelandic Waterfall">
+          <img src="images/nature2.jpg" alt="Yacht Life">
+          <img src="images/nature3.jpg" alt="Mountain River">
         </div>
       </a>
       <!-- I can add more albums as needed -->
@@ -50,7 +50,8 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Sharath's Photography</p>
+    <p>&copy; <span id="year"></span> Sharath Jegan. All rights reserved. Unauthorized use is prohibited.</p>
+    <p><a href="#header" id="backTop">Back to Top</a></p>
   </footer>
 
   <script src="js/script.js"></script>
