@@ -22,7 +22,7 @@ header h1 {
 
 h2 {
   text-align: center;
-  color: #2693cc;
+  color: #3db1f3;
   margin-top: 2rem;
 }
 
@@ -45,7 +45,7 @@ nav a {
 nav a.active,
 nav a:hover {
   color: #ffffff;
-  border-bottom: 2px solid #2693cc;
+  border-bottom: 2px solid #3db1f3;
 }
 
 /* Skip to Main */
@@ -53,7 +53,7 @@ nav a:hover {
   position: absolute;
   top: -40px;
   left: 10px;
-  background: #2693cc;
+  background: #3db1f3;
   color: #1f1f1f;
   padding: 10px;
   text-decoration: none;
@@ -78,7 +78,7 @@ footer {
 }
 
 #backTop {
-  color: #2693cc;
+  color: #3db1f3;
   font-weight: bold;
   text-decoration: none;
 }
@@ -247,7 +247,7 @@ footer {
 }
 
 .card-stack .info-card strong {
-  color: #2693cc;
+  color: #3db1f3;
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -258,7 +258,7 @@ footer {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 6px 12px;
-  background-color: #2693cc;
+  background-color: #007acc;
   color: white;
   font-size: 1rem;
   text-decoration: none;
@@ -266,7 +266,7 @@ footer {
 }
   
 .buyButton:hover {
-  background-color: #0072b0;
+  background-color: #005fa3;
 }
 
 /* Lightbox */
@@ -291,6 +291,12 @@ footer {
 
 .lightbox.show {
   display: flex;
+}
+
+/* 404 */
+.not-found {
+  text-align: center;
+  padding: 5rem 2rem;
 }
 
 /* Responsive Design */

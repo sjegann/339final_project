@@ -10,11 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(lightbox);
   
     const img = document.createElement("img");
+    img.alt = "";
     lightbox.appendChild(img);
   
     images.forEach(image => {
       image.addEventListener("click", () => {
         img.src = image.src;
+        img.alt = image.alt;
         lightbox.classList.add("show");
       });
     });
@@ -22,5 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.addEventListener("click", () => {
       lightbox.classList.remove("show");
       img.src = "";
+      img.alt = "";
     });
 });
